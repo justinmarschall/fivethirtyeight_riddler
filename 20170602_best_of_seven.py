@@ -37,8 +37,8 @@ def riddler(a_pct = 0.5):
 ## prob = team a's probabilities to simulate
 ## iter_values = itertools object of all probabilities to simulate in map() call below
 n = 10000
-numbers = [0.5, 0.6, 0.7]
-iter_values = itertools.chain.from_iterable((itertools.repeat(i, n) for i in numbers))
+prob = [0.5, 0.6, 0.7]
+iter_values = itertools.chain.from_iterable((itertools.repeat(i, n) for i in prob))
 
 # create generator object for mapped simulation
 sim = (i for i in map(riddler, iter_values))
