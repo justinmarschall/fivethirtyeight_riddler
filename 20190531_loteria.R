@@ -32,6 +32,7 @@ library(tidyverse)
 
 # create function ---------------------------------------------------------
 
+# function to simulate 1 game
 riddler <- function(deck_size = 54, grid_x_length = 4) {
   if(deck_size <= grid_x_length**2) {
     stop("deck_size (n of unique cards) must be > grid_x_length**2 (number of cards each player takes)")
